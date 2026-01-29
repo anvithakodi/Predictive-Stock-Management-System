@@ -1,0 +1,115 @@
+Aim
+
+To document complex system workflows of the Predictive Stock Management System, highlighting decision points and parallel activities using activity-oriented descriptions.
+
+Workflow 1: Inventory Monitoring and Demand Prediction
+Description
+
+This workflow represents continuous monitoring of inventory, prediction of future stock demand, and alert generation using parallel system activities.
+
+Workflow Steps
+
+Start
+
+Collect real-time sales data
+
+Update inventory records
+
+Decision Point: Is inventory below reorder level?
+
+No: Continue monitoring
+
+Yes: Proceed to prediction process
+
+Parallel Activities Begin (Fork):
+
+Analyze historical sales data
+
+Fetch seasonal and trend data
+
+Combine analysis results
+
+Generate stock demand prediction
+
+Decision Point: Is predicted demand higher than available stock?
+
+Yes: Generate restock alert
+
+No: Continue monitoring
+
+Display prediction and alert (if any)
+
+End
+
+Parallel Activities
+
+Sales trend analysis
+
+Seasonal pattern evaluation
+
+Outcome
+
+System proactively predicts demand and alerts users when replenishment is required.
+
+Workflow 2: Restock Order Processing and Inventory Update
+Description
+
+This workflow demonstrates restock order processing with decision points and parallel order management activities.
+
+Workflow Steps
+
+Start
+
+Store Manager reviews stock level and prediction
+
+Decision Point: Is restocking required?
+
+No: End process
+
+Yes: Proceed with order placement
+
+Select supplier
+
+Create restock order
+
+Parallel Activities Begin (Fork):
+
+Notify supplier
+
+Reserve storage space
+
+Supplier confirms availability
+
+Decision Point: Is supplier available?
+
+No: Select alternate supplier
+
+Yes: Confirm order
+
+Update order status
+
+Parallel Activities Begin (Fork):
+
+Update inventory records
+
+Generate restock report
+
+End
+
+Parallel Activities
+
+Supplier notification
+
+Inventory reservation and reporting
+
+Workflow Summary Table
+Workflow ID	Workflow Name	Key Features
+WF-01	Inventory Monitoring & Prediction	Decision points, parallel analysis
+WF-02	Restock Order Processing & Update	Decisions, parallel execution
+Result
+
+Complex workflows were successfully documented with clear decision points and parallel activities, improving understanding of system behavior.
+
+Conclusion
+
+Workflow documentation enhances clarity of system operations by modeling real-world decision making and concurrency. The Predictive Stock Management System workflows accurately represent dynamic and parallel processes.
