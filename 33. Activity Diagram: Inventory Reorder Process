@@ -1,0 +1,65 @@
+1️⃣ Activity Diagram: Inventory Reorder Process
+
+Purpose:
+Shows how the system automatically reorders stock when inventory is low.
+
+Activities & Flow
+(Start)
+   ↓
+Check Stock Level
+   ↓
+[Decision] Stock Below Threshold?
+   ├── No → Continue Monitoring → (End)
+   └── Yes
+        ↓
+Generate Purchase Order
+        ↓
+Send Order to Supplier
+        ↓
+Receive Order Confirmation
+        ↓
+Update Inventory Status
+        ↓
+(End)
+
+Key UML Elements
+
+Initial Node: Start
+
+Decision Node: Stock Below Threshold?
+
+Final Node: End
+
+Control Flows: Arrows between activities
+
+2️⃣ Activity Diagram: Sales Processing Workflow
+
+Purpose:
+Represents the workflow from receiving a customer order to completing the sale.
+
+Activities & Flow
+(Start)
+   ↓
+Receive Sales Order
+   ↓
+Validate Stock Availability
+   ↓
+[Decision] Stock Available?
+   ├── No → Display Out of Stock Message → (End)
+   └── Yes
+        ↓
+Process Sale
+        ↓
+Update Inventory
+        ↓
+Generate Invoice
+        ↓
+(End)
+
+Key UML Elements
+
+Decision Node: Stock Available?
+
+Alternative Flow: Out-of-stock handling
+
+Final State: Sale completed or terminated
