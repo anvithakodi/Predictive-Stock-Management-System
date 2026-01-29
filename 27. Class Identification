@@ -1,0 +1,222 @@
+
+Aim
+
+To identify the key classes required for designing the Class Diagram of the Predictive Stock Management System.
+
+Definition of Class
+
+A class represents a real-world entity that encapsulates attributes (data) and methods (operations) related to the system.
+
+Identified Key Classes
+1. User
+
+Description: Represents system users.
+
+Key Attributes:
+
+userId
+
+username
+
+password
+
+role
+
+Key Methods:
+
+login()
+
+logout()
+
+changePassword()
+
+2. Admin
+
+Description: Manages system configuration and users.
+
+Key Attributes:
+
+adminId
+
+Key Methods:
+
+manageUsers()
+
+manageSuppliers()
+
+generateAdminReport()
+
+3. StoreManager
+
+Description: Oversees inventory and stock decisions.
+
+Key Attributes:
+
+managerId
+
+Key Methods:
+
+viewStock()
+
+placeRestockOrder()
+
+viewPredictions()
+
+4. InventoryStaff
+
+Description: Handles daily inventory operations.
+
+Key Attributes:
+
+staffId
+
+Key Methods:
+
+updateInventory()
+
+recordSales()
+
+5. Product
+
+Description: Represents items stored in inventory.
+
+Key Attributes:
+
+productId
+
+productName
+
+category
+
+unitPrice
+
+Key Methods:
+
+updateProductDetails()
+
+6. Inventory
+
+Description: Maintains stock information.
+
+Key Attributes:
+
+inventoryId
+
+quantityAvailable
+
+reorderLevel
+
+Key Methods:
+
+updateStock()
+
+checkStockLevel()
+
+7. SalesData
+
+Description: Stores historical sales information.
+
+Key Attributes:
+
+salesId
+
+saleDate
+
+quantitySold
+
+Key Methods:
+
+addSalesRecord()
+
+getSalesHistory()
+
+8. PredictionModel
+
+Description: Performs demand forecasting.
+
+Key Attributes:
+
+modelId
+
+accuracy
+
+Key Methods:
+
+analyzeSalesData()
+
+predictDemand()
+
+9. Supplier
+
+Description: Represents product suppliers.
+
+Key Attributes:
+
+supplierId
+
+supplierName
+
+contactDetails
+
+Key Methods:
+
+supplyProduct()
+
+10. RestockOrder
+
+Description: Handles inventory replenishment.
+
+Key Attributes:
+
+orderId
+
+orderDate
+
+orderQuantity
+
+orderStatus
+
+Key Methods:
+
+createOrder()
+
+updateOrderStatus()
+
+11. Report
+
+Description: Generates system reports.
+
+Key Attributes:
+
+reportId
+
+reportType
+
+generatedDate
+
+Key Methods:
+
+generateReport()
+
+exportReport()
+
+Class Summary Table
+Class Name	Responsibility
+User	User authentication
+Admin	System administration
+StoreManager	Inventory decisions
+InventoryStaff	Stock operations
+Product	Product details
+Inventory	Stock management
+SalesData	Sales records
+PredictionModel	Demand prediction
+Supplier	Stock supply
+RestockOrder	Inventory replenishment
+Report	Reporting
+Result
+
+Key classes required for the Class Diagram were successfully identified.
+
+Conclusion
+
+Identifying appropriate classes ensures a well-structured object-oriented design. The Predictive Stock Management System was modeled using clearly defined and relevant classes.
