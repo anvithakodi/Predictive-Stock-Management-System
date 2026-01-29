@@ -1,0 +1,88 @@
+Aim
+
+To set up and configure a team workspace using a CASE tool (StarUML / Visual Paradigm) for collaborative development of the Predictive Stock Management System.
+
+Software Requirements
+
+CASE Tool: StarUML / Visual Paradigm
+
+Collaboration Support: Shared project files / Team repository
+
+Operating System: Windows / macOS / Linux
+
+Tool Selected
+
+Visual Paradigm / StarUML
+
+Team Details
+
+Team Members: Project Manager, System Analyst, Designer, Developer
+
+Project Name: Predictive Stock Management System
+
+Procedure
+Step 1: Create Team Workspace
+
+Launch the CASE tool.
+
+Create a new project named Predictive Stock Management System.
+
+Enable team collaboration or shared workspace option.
+
+Step 2: Set Up Shared Repository
+
+Create a central repository (local shared folder or cloud-based repository).
+
+Store the project file in the shared workspace.
+
+Ensure all team members have access permissions.
+
+Step 3: Add Team Members
+
+Register team members in the workspace.
+
+Assign roles:
+
+Admin: Project Manager
+
+Designer: UML Diagram Creation
+
+Analyst: Requirement & Use Case Modeling
+
+Developer: Class and Sequence Diagrams
+
+Step 4: Configure Collaboration Rules
+
+Define version control rules for project updates.
+
+Assign responsibilities for each UML diagram.
+
+Schedule regular synchronization of the workspace.
+
+Step 5: Collaborative Diagram Development
+
+Team members collaboratively worked on:
+
+Use Case Diagram
+
+Class Diagram
+
+Sequence Diagram
+
+Activity Diagram
+
+Each member updated their assigned diagrams and synchronized changes with the team workspace.
+
+Step 6: Save and Backup
+
+Save the updated project regularly.
+
+Maintain backup copies of the project files.
+
+Result
+
+The team workspace was successfully set up using the CASE tool. All team members collaborated effectively on UML modeling for the Predictive Stock Management System.
+
+Conclusion
+
+The team workspace setup enabled efficient collaboration, version control, and task distribution. This improved coordination and ensured consistency in system design.
