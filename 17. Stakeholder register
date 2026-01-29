@@ -1,0 +1,35 @@
+
+1. Purpose of the Stakeholder Register
+
+This Stakeholder Register identifies all individuals, groups, or organizations that may impact or be impacted by the Predictive Stock Management System project. It documents stakeholder roles, interests, influence levels, expectations, and engagement strategies to ensure effective communication and project success.
+
+2. Stakeholder Register Details
+Stakeholder ID	Stakeholder Name / Group	Role	Interest Level	Influence Level	Key Expectations	Communication Strategy
+S1	Project Sponsor	Provides funding and strategic direction	High	High	On-time delivery, ROI, improved inventory efficiency	Monthly progress reports, review meetings
+S2	Project Manager	Plans and oversees project execution	High	High	Clear scope, timely milestones, risk control	Weekly status meetings, dashboards
+S3	Development Team	Designs and develops the system	High	Medium	Clear requirements, technical feasibility	Daily/weekly stand-ups, documentation
+S4	Data Analysts	Build and validate predictive models	High	Medium	Quality data, accurate forecasts	Technical reviews, analytics reports
+S5	Inventory Manager	End user of the system	High	Medium	Accurate demand predictions, usability	Demos, feedback sessions
+S6	Operations Team	Uses system outputs for decision-making	Medium	Medium	Reduced stockouts and overstock	Training sessions, user guides
+S7	IT Support Team	Maintains system infrastructure	Medium	Low	System stability and security	Technical documentation, handover meetings
+S8	Senior Management	Reviews project outcomes	Medium	High	Business value and performance improvement	Executive summaries, milestone reports
+S9	End Users	Daily system users	Medium	Low	Ease of use, reliability	Training, helpdesk support
+3. Stakeholder Classification
+Category	Stakeholders
+Internal	Project Sponsor, Project Manager, Development Team, Data Analysts, Inventory Manager, Operations Team, IT Support
+External	None (at current project scope)
+4. Stakeholder Engagement Strategy
+Influence \ Interest	High Interest	Low Interest
+High Influence	Manage closely (Sponsor, Project Manager)	Keep satisfied (Senior Management)
+Low Influence	Keep informed (Development Team, Inventory Manager)	Monitor (End Users)
+5. Assumptions
+
+Stakeholders will actively participate during reviews and feedback sessions
+
+Communication channels are accessible and reliable
+
+No major external stakeholders are involved at this stage
+
+6. Review and Updates
+
+The stakeholder register will be reviewed periodically and updated as new stakeholders are identified or project roles evolve.
