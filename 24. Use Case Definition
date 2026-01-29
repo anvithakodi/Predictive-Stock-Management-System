@@ -1,0 +1,75 @@
+
+Aim
+
+To identify and define the core use cases of the Predictive Stock Management System that describe the interactions between actors and the system.
+
+Identified Core Use Cases
+1. Login to System
+
+Actors: Admin, Store Manager, Inventory Staff
+Description: Allows authorized users to securely access the system.
+
+2. Manage User Accounts
+
+Actors: Admin
+Description: Enables the admin to create, update, and remove user accounts and assign roles.
+
+3. Record Sales Data
+
+Actors: Sales System, Inventory Staff
+Description: Captures daily sales transactions for analysis and prediction.
+
+4. Update Inventory Levels
+
+Actors: Inventory Staff
+Description: Updates stock quantities when items are sold or received.
+
+5. View Stock Levels
+
+Actors: Store Manager, Inventory Staff
+Description: Displays real-time inventory status for all products.
+
+6. Predict Stock Demand
+
+Actors: Store Manager, Prediction Engine
+Description: Uses historical sales data to forecast future stock requirements.
+
+7. Generate Restock Alerts
+
+Actors: System
+Description: Automatically notifies users when stock falls below threshold levels.
+
+8. Place Restock Order
+
+Actors: Store Manager
+Description: Initiates restocking requests based on system predictions.
+
+9. Manage Supplier Details
+
+Actors: Admin
+Description: Maintains supplier information and contact details.
+
+10. Generate Reports
+
+Actors: Admin, Store Manager
+Description: Produces sales, inventory, and prediction reports for analysis and decision-making.
+
+Use Case Summary Table
+Use Case ID	Use Case Name	Primary Actor(s)
+UC-01	Login to System	Admin, Manager, Staff
+UC-02	Manage User Accounts	Admin
+UC-03	Record Sales Data	Sales System, Staff
+UC-04	Update Inventory Levels	Inventory Staff
+UC-05	View Stock Levels	Manager, Staff
+UC-06	Predict Stock Demand	Manager, System
+UC-07	Generate Restock Alerts	System
+UC-08	Place Restock Order	Manager
+UC-09	Manage Supplier Details	Admin
+UC-10	Generate Reports	Admin, Manager
+Result
+
+Ten core use cases were identified to represent the key functionalities of the Predictive Stock Management System.
+
+Conclusion
+
+Defining core use cases helps in understanding system behavior and user interactions. The Predictive Stock Management System’s use cases cover inventory control, prediction, and reporting functionalities.
