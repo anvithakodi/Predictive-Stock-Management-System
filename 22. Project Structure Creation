@@ -1,0 +1,128 @@
+
+Aim
+
+To create and organize the project structure in a CASE tool for the Predictive Stock Management System to ensure systematic modeling and easy maintenance.
+
+Software Requirements
+
+CASE Tool: StarUML / Visual Paradigm
+
+Modeling Standard: UML 2.x
+
+Operating System: Windows / macOS / Linux
+
+Tool Selected
+
+StarUML / Visual Paradigm
+
+Project Name
+
+Predictive Stock Management System
+
+Procedure
+Step 1: Create New Project
+
+Open the CASE tool.
+
+Select File → New Project.
+
+Choose UML Modeling.
+
+Enter the project name as Predictive Stock Management System.
+
+Step 2: Define Model Packages
+
+The project structure was organized using UML packages as follows:
+
+Requirements
+
+Problem Statement
+
+Functional Requirements
+
+Non-Functional Requirements
+
+Actors
+
+Admin
+
+Store Manager
+
+Supplier
+
+Use Case Model
+
+Use Case Diagram
+
+Use Case Descriptions
+
+Structural Model
+
+Class Diagram
+
+Object Diagram
+
+Behavioral Model
+
+Sequence Diagram
+
+Activity Diagram
+
+State Diagram
+
+Data Model
+
+Sales Data
+
+Inventory Data
+
+Prediction Data
+
+System Components
+
+Stock Prediction Module
+
+Inventory Management Module
+
+Reporting Module
+
+Step 3: Assign Diagrams to Packages
+
+Created relevant UML diagrams inside each package.
+
+Ensured logical separation of system components.
+
+Maintained naming consistency across all elements.
+
+Step 4: Maintain Project Organization
+
+Grouped related diagrams under appropriate packages.
+
+Used clear and meaningful names for all elements.
+
+Updated the structure as the project evolved.
+
+Step 5: Save Project Structure
+
+Saved the project file in the CASE tool’s default format.
+
+Exported diagrams where required for documentation.
+
+Project Structure Overview
+Predictive Stock Management System
+│
+├── Requirements
+├── Actors
+├── Use Case Model
+├── Structural Model
+├── Behavioral Model
+├── Data Model
+└── System Components
+
+Result
+
+The project structure was successfully created and organized in the CASE tool. The modular structure improved clarity, scalability, and ease of collaboration.
+
+Conclusion
+
+A well-defined project structure in the CASE tool helps in systematic system modeling and efficient team collaboration. The Predictive Stock Management System was structured using standard UML practices.
