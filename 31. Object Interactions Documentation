@@ -1,0 +1,106 @@
+Aim
+
+To document the object interactions involved in the sequence diagrams of the Predictive Stock Management System, showing how objects communicate through messages to accomplish system tasks.
+
+Definition
+
+Object interaction represents the exchange of messages between objects over time to perform a specific functionality within the system.
+
+Documented Object Interactions
+1. Object Interaction: Login to System
+
+Objects Involved:
+User → LoginUI → AuthenticationService → UserDatabase
+
+Interaction Flow
+
+User sends enterCredentials() to LoginUI
+
+LoginUI sends validateUser() to AuthenticationService
+
+AuthenticationService sends checkCredentials() to UserDatabase
+
+UserDatabase returns authentication result
+
+AuthenticationService sends loginStatus() to LoginUI
+
+LoginUI displays access result to User
+
+Result:
+User is authenticated and logged into the system.
+
+2. Object Interaction: Record Sales and Update Inventory
+
+Objects Involved:
+InventoryStaff / SalesSystem → SalesModule → InventoryModule → Database
+
+Interaction Flow
+
+Sales data is sent using submitSalesData()
+
+SalesModule sends validateSalesData()
+
+SalesModule stores data using saveSalesRecord()
+
+InventoryModule receives updateStock()
+
+InventoryModule updates quantity in Database
+
+Result:
+Sales data is recorded and inventory levels are updated.
+
+3. Object Interaction: Predict Stock Demand
+
+Objects Involved:
+StoreManager → PredictionModule → SalesData → PredictionModel → Inventory
+
+Interaction Flow
+
+StoreManager sends requestPrediction()
+
+PredictionModule sends fetchSalesData()
+
+SalesData returns historical records
+
+PredictionModel performs analyzeTrends()
+
+PredictionModel sends generateForecast()
+
+Prediction results are sent to StoreManager
+
+Result:
+Predicted stock demand is generated and displayed.
+
+4. Object Interaction: Place Restock Order
+
+Objects Involved:
+StoreManager → InventoryModule → RestockOrder → Supplier → Database
+
+Interaction Flow
+
+StoreManager sends createRestockOrder()
+
+InventoryModule sends checkStockLevel()
+
+RestockOrder sends placeOrder()
+
+Supplier receives orderNotification()
+
+Database stores order details
+
+Result:
+Restock order is successfully placed with the supplier.
+
+Object Interaction Summary Table
+Interaction ID	Use Case	Key Objects Involved
+OI-01	Login to System	User, Auth Service
+OI-02	Record Sales & Inventory	Sales, Inventory
+OI-03	Predict Stock Demand	Prediction Model
+OI-04	Place Restock Order	Supplier, Order
+Result
+
+Object interactions for all critical sequence diagrams were clearly documented, showing message flow and object collaboration.
+
+Conclusion
+
+Documenting object interactions provides a clear understanding of runtime behavior and message exchange. The Predictive Stock Management System’s sequence diagrams effectively represent object communication.
