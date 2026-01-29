@@ -1,0 +1,37 @@
+This section gives a high-level overview of how the system works, its main functions, and the environment in which it operates.
+
+Product Perspective
+
+The Predictive Stock Management System is a standalone application designed to help businesses manage inventory and forecast demand. It improves traditional stock systems by adding prediction and analytics features.
+
+Product Functions
+
+Record stock-in and stock-out
+
+Maintain inventory database
+
+Analyze historical data
+
+Predict future stock demand
+
+Generate alerts for low stock
+
+Display dashboards and reports
+
+User Characteristics
+
+Basic computer knowledge
+
+No advanced technical skills required
+
+Suitable for store managers and business owners
+
+Constraints
+
+Predictions depend on data quality
+
+Limited to small and medium business use
+
+Internet may be required for some features
+
+This description provides a clear overview of what the system does and who it is for.
