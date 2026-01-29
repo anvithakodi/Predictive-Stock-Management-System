@@ -1,0 +1,105 @@
+
+Aim
+
+To identify and define all the actors involved in the Predictive Stock Management System using a CASE tool.
+
+Definition of Actor
+
+An actor is an external entity (user or system) that interacts with the system to achieve specific goals.
+
+Identified Actors
+1. Admin
+
+Description:
+The Admin is responsible for overall system control and configuration.
+
+Responsibilities:
+
+Manage users and roles
+
+Configure system settings
+
+Monitor system performance
+
+Generate administrative reports
+
+2. Store Manager
+
+Description:
+The Store Manager oversees inventory operations and uses predictions for decision-making.
+
+Responsibilities:
+
+View stock predictions
+
+Approve restocking decisions
+
+Monitor inventory levels
+
+Generate inventory reports
+
+3. Inventory Staff
+
+Description:
+Inventory Staff handles daily stock operations.
+
+Responsibilities:
+
+Update stock entries
+
+Record incoming and outgoing items
+
+Verify stock levels
+
+4. Supplier
+
+Description:
+The Supplier provides stock based on system requests.
+
+Responsibilities:
+
+Receive restock requests
+
+Supply inventory items
+
+Update delivery status
+
+5. Prediction Engine (System Actor)
+
+Description:
+An external or automated system component responsible for forecasting stock demand.
+
+Responsibilities:
+
+Analyze historical sales data
+
+Generate stock demand predictions
+
+Send prediction results to the system
+
+6. Sales System (External System)
+
+Description:
+An external system that provides sales transaction data.
+
+Responsibilities:
+
+Share sales data
+
+Update transaction records
+
+Actor Summary Table
+Actor Name	Actor Type	Role in System
+Admin	Human	System administration
+Store Manager	Human	Inventory decision-making
+Inventory Staff	Human	Stock handling and updates
+Supplier	External Entity	Inventory supply
+Prediction Engine	System	Demand forecasting
+Sales System	External System	Sales data provider
+Result
+
+All relevant actors interacting with the Predictive Stock Management System were identified and documented.
+
+Conclusion
+
+Identifying actors helps define system boundaries and user interactions. The Predictive Stock Management System involves human users and external systems to ensure accurate prediction and efficient inventory control.
