@@ -1,0 +1,19 @@
+Non-functional requirements describe how the system should perform.
+
+NFR-01: Performance
+
+System should respond quickly and handle data smoothly.
+
+NFR-02: Security
+
+System must provide secure login and role-based access.
+
+NFR-03: Usability
+
+Interface should be simple and user-friendly.
+
+NFR-04: Reliability
+
+System should minimize errors and data loss.
+
+These requirements ensure quality and user satisfaction.
