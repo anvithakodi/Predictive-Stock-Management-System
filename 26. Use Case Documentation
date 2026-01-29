@@ -1,0 +1,279 @@
+
+Predictive Stock Management System
+UC-01: Login to System
+
+Primary Actors: Admin, Store Manager, Inventory Staff
+
+Preconditions
+
+User is registered in the system
+
+System is online
+
+Main Flow
+
+User enters username and password
+
+System validates credentials
+
+System grants access to the dashboard
+
+Alternative Flows
+
+AF1: Invalid credentials → system displays error message
+
+AF2: Forgotten password → system redirects to password reset
+
+Postconditions
+
+User is successfully logged into the system
+
+UC-02: Manage User Accounts
+
+Primary Actor: Admin
+
+Preconditions
+
+Admin is logged in
+
+Main Flow
+
+Admin selects user management option
+
+Admin adds/updates/deletes user accounts
+
+System saves user details
+
+Alternative Flows
+
+AF1: Duplicate username → system shows warning
+
+AF2: Invalid input → system requests correction
+
+Postconditions
+
+User account information is updated
+
+UC-03: Record Sales Data
+
+Primary Actors: Inventory Staff, Sales System
+
+Preconditions
+
+User/system is authenticated
+
+Product exists in inventory
+
+Main Flow
+
+Sales data is entered or imported
+
+System validates the data
+
+Sales data is stored in database
+
+Alternative Flows
+
+AF1: Missing data → system prompts for completion
+
+AF2: Invalid product ID → system rejects entry
+
+Postconditions
+
+Sales data is recorded successfully
+
+UC-04: Update Inventory Levels
+
+Primary Actor: Inventory Staff
+
+Preconditions
+
+User is logged in
+
+Sales or delivery data is available
+
+Main Flow
+
+User selects inventory update option
+
+System adjusts stock quantity
+
+Updated inventory is saved
+
+Alternative Flows
+
+AF1: Negative stock detected → system blocks update
+
+AF2: Product not found → system shows error
+
+Postconditions
+
+Inventory levels are updated
+
+UC-05: View Stock Levels
+
+Primary Actors: Store Manager, Inventory Staff
+
+Preconditions
+
+User is logged in
+
+Main Flow
+
+User requests stock status
+
+System retrieves inventory data
+
+System displays stock levels
+
+Alternative Flows
+
+AF1: No data available → system shows empty result
+
+Postconditions
+
+Current inventory status is displayed
+
+UC-06: Predict Stock Demand
+
+Primary Actors: Store Manager, Prediction Engine
+
+Preconditions
+
+Historical sales data exists
+
+User is logged in
+
+Main Flow
+
+User initiates demand prediction
+
+System analyzes sales data
+
+Prediction engine generates forecast
+
+System displays prediction results
+
+Alternative Flows
+
+AF1: Insufficient data → system shows warning
+
+AF2: Prediction engine unavailable → system retries later
+
+Postconditions
+
+Stock demand prediction is generated
+
+UC-07: Generate Restock Alerts
+
+Primary Actor: System
+
+Preconditions
+
+Inventory thresholds are defined
+
+Main Flow
+
+System monitors stock levels
+
+Stock falls below threshold
+
+System generates alert notification
+
+Alternative Flows
+
+AF1: Threshold not set → alert not generated
+
+Postconditions
+
+Restock alert is sent to concerned users
+
+UC-08: Place Restock Order
+
+Primary Actor: Store Manager
+
+Preconditions
+
+User is logged in
+
+Stock shortage identified
+
+Main Flow
+
+Manager reviews stock prediction
+
+Manager selects supplier
+
+Restock order is placed
+
+System records order details
+
+Alternative Flows
+
+AF1: Supplier unavailable → select another supplier
+
+AF2: Order cancelled → no changes made
+
+Postconditions
+
+Restock order is successfully placed
+
+UC-09: Manage Supplier Details
+
+Primary Actor: Admin
+
+Preconditions
+
+Admin is logged in
+
+Main Flow
+
+Admin opens supplier management
+
+Admin adds/updates supplier details
+
+System saves supplier information
+
+Alternative Flows
+
+AF1: Duplicate supplier entry → system shows error
+
+Postconditions
+
+Supplier details are updated
+
+UC-10: Generate Reports
+
+Primary Actors: Admin, Store Manager
+
+Preconditions
+
+User is logged in
+
+Data is available
+
+Main Flow
+
+User selects report type
+
+System collects required data
+
+Report is generated and displayed
+
+Alternative Flows
+
+AF1: No data found → system shows message
+
+AF2: User exports report → system saves file
+
+Postconditions
+
+Reports are generated and available for analysis
+
+Result
+
+All identified use cases were fully documented with preconditions, main flows, alternative flows, and postconditions.
+
+Conclusion
+
+Use case documentation provides a detailed understanding of system behavior and user interactions. The Predictive Stock Management System’s functionality was clearly defined through structured use case descriptions.
