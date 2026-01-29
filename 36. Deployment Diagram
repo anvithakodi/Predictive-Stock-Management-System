@@ -1,0 +1,71 @@
+Nodes Identified
+
+Client System
+
+Application Server
+
+Database Server
+
+Prediction Engine Server (can be logical or physical)
+
+📐 Deployment Diagram (Textual UML Representation)
++--------------------+
+|  Client System     |
+|--------------------|
+| Web Browser / UI   |
++--------------------+
+          |
+          | HTTP / HTTPS
+          v
++---------------------------+
+|   Application Server      |
+|---------------------------|
+| Authentication Module    |
+| Inventory Module         |
+| Sales Module             |
+| Reporting Module         |
++---------------------------+
+          |
+          | API / Service Call
+          v
++---------------------------+
+| Prediction Engine Server  |
+|---------------------------|
+| Forecasting Algorithms   |
++---------------------------+
+          |
+          | SQL / Data Access
+          v
++---------------------------+
+|     Database Server       |
+|---------------------------|
+| Inventory DB              |
+| Sales DB                  |
+| Prediction Data           |
++---------------------------+
+
+🔗 Communication Links
+
+Client System → Application Server
+
+Protocol: HTTP / HTTPS
+
+Purpose: User interaction and requests
+
+Application Server → Prediction Engine Server
+
+Protocol: API / Service call
+
+Purpose: Demand forecasting
+
+Application Server → Database Server
+
+Protocol: SQL / JDBC / ORM
+
+Purpose: Data storage and retrieval
+
+Prediction Engine Server → Database Server
+
+Protocol: SQL
+
+Purpose: Access historical sales data
