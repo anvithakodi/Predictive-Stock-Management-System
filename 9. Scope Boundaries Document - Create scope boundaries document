@@ -1,0 +1,17 @@
+The scope boundaries define the limits of the system by clearly separating what the system will and will not do.
+
+Scope Boundaries
+
+The system focuses only on inventory management and prediction
+
+Predictions are based on historical data, not real-time market conditions
+
+Users must manually enter stock updates
+
+The system supports limited user roles (Admin and User)
+
+It does not handle billing, invoicing, or payment processing
+
+The system is designed for small to medium businesses
+
+Defining these boundaries helps avoid scope creep and ensures the project stays focused and achievable.
