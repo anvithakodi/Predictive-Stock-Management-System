@@ -1,0 +1,74 @@
+Aim
+
+To identify and represent the relationships among classes in the Predictive Stock Management System using object-oriented concepts such as association, aggregation, and inheritance.
+
+Types of Relationships
+
+Association: Represents interaction between classes
+
+Aggregation: Represents a “has-a” relationship (weak ownership)
+
+Inheritance: Represents an “is-a” relationship
+
+Identified Class Relationships
+1. Inheritance Relationships
+
+The User class acts as a superclass for system users.
+
+Admin inherits User
+
+StoreManager inherits User
+
+InventoryStaff inherits User
+
+Explanation:
+All user types share common authentication attributes and methods defined in the User class.
+
+2. Aggregation Relationships
+Whole Class	Part Class	Description
+Inventory	Product	Inventory contains multiple products
+StoreManager	RestockOrder	Manager handles multiple restock orders
+Supplier	Product	Supplier provides products
+Report	SalesData	Reports use sales data for analysis
+
+Explanation:
+The part objects can exist independently of the whole.
+
+3. Association Relationships
+Class A	Class B	Relationship Description
+Inventory	SalesData	Inventory updates based on sales
+PredictionModel	SalesData	Prediction model analyzes sales data
+PredictionModel	Inventory	Predicted demand affects inventory
+StoreManager	PredictionModel	Manager views prediction results
+RestockOrder	Supplier	Orders are placed with suppliers
+Admin	Report	Admin generates reports
+Relationship Summary
+
+Inheritance improves reusability and reduces redundancy.
+
+Aggregation models logical ownership without strict dependency.
+
+Association represents functional interaction between classes.
+
+UML Relationship Overview (Textual)
+User
+ ├── Admin
+ ├── StoreManager
+ └── InventoryStaff
+
+Inventory ◇── Product
+Supplier ◇── Product
+StoreManager ◇── RestockOrder
+
+PredictionModel ── SalesData
+PredictionModel ── Inventory
+RestockOrder ── Supplier
+Admin ── Report
+
+Result
+
+All required class relationships—association, aggregation, and inheritance—were successfully identified and documented.
+
+Conclusion
+
+Defining class relationships provides a clear structural view of the system. The Predictive Stock Management System follows standard UML relationship modeling for effective object-oriented design.
