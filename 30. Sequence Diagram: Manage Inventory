@@ -1,0 +1,62 @@
+1️⃣ Sequence Diagram: Manage Inventory
+
+Actors / Objects:
+Admin → Inventory Management System → Database
+
+Admin → Inventory Management System : Add / Update Product
+Inventory Management System → Database : Save Product Details
+Database → Inventory Management System : Confirmation
+Inventory Management System → Admin : Success / Failure Message
+
+
+Purpose:
+Handles product creation and updates in inventory.
+
+2️⃣ Sequence Diagram: Sales Processing
+
+Actors / Objects:
+Sales Staff → System → Inventory → Database
+
+Sales Staff → System : Enter Sales Details
+System → Inventory : Check Stock Availability
+Inventory → Database : Fetch Stock Data
+Database → Inventory : Stock Information
+Inventory → System : Stock Available
+System → Database : Update Stock Quantity
+System → Sales Staff : Sales Confirmation
+
+
+Alternative Flow:
+
+If stock is insufficient → System displays “Out of Stock” message.
+
+3️⃣ Sequence Diagram: Stock Prediction
+
+Actors / Objects:
+System → Prediction Engine → Database
+
+System → Prediction Engine : Request Stock Forecast
+Prediction Engine → Database : Retrieve Historical Sales Data
+Database → Prediction Engine : Sales Data
+Prediction Engine → Prediction Engine : Analyze & Predict
+Prediction Engine → System : Predicted Demand Report
+
+
+Purpose:
+Predicts future stock demand using historical data.
+
+4️⃣ Sequence Diagram: Automatic Reorder Process
+
+Actors / Objects:
+System → Inventory → Supplier
+
+System → Inventory : Monitor Stock Levels
+Inventory → System : Stock Below Threshold
+System → Supplier : Generate Purchase Order
+Supplier → System : Order Confirmation
+System → Inventory : Update Incoming Stock Status
+
+
+Alternative Flow:
+
+If supplier unavailable → System sends alert to Admin.
