@@ -1,0 +1,36 @@
+Functional requirements describe what the system must do. Each requirement ensures the system meets user needs.
+
+Functional Requirements
+
+FR-01: User Login
+System must allow secure login for authorized users.
+
+FR-02: Add Stock
+Users can add new stock details.
+
+FR-03: Update Stock
+Users can modify stock quantities.
+
+FR-04: Track Inventory
+System shows current stock levels.
+
+FR-05: Demand Prediction
+System predicts future stock needs using past data.
+
+FR-06: Alerts
+System sends low-stock alerts.
+
+FR-07: Dashboard View
+System displays stock insights visually.
+
+Acceptance Criteria
+
+Login must verify credentials
+
+Stock updates reflect instantly
+
+Predictions show estimated demand
+
+Alerts trigger at threshold levels
+
+These requirements define the core system behavior.
