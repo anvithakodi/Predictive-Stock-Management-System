@@ -1,0 +1,54 @@
+Component Diagram – Predictive Stock Management System
+Components Identified
+
+User Interface
+
+Authentication Module
+
+Inventory Management Module
+
+Sales Management Module
+
+Prediction Engine
+
+Reporting Module
+
+Database
+
+📐 Component Diagram (Textual UML Representation)
+[User Interface]
+        |
+        v
+[Authentication Module]
+        |
+        v
+[Inventory Management Module] <----> [Sales Management Module]
+        |
+        v
+[Prediction Engine]
+        |
+        v
+[Reporting Module]
+        |
+        v
+[Database]
+
+🔗 Component Relationships Explanation
+
+User Interface → Authentication Module
+Handles user login and role validation.
+
+Authentication Module → Inventory & Sales Modules
+Allows access to authorized functionalities.
+
+Inventory Management Module ↔️ Sales Management Module
+Sales updates inventory levels in real time.
+
+Inventory Management Module → Prediction Engine
+Sends historical stock and sales data for forecasting.
+
+Prediction Engine → Reporting Module
+Provides predicted demand and insights.
+
+All Business Modules → Database
+Store and retrieve persistent data.
