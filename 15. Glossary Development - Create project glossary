@@ -1,0 +1,12 @@
+A glossary helps define important terms used in the project. It ensures everyone understands the same meaning and avoids confusion.
+| Term              | Meaning                                       |
+| ----------------- | --------------------------------------------- |
+| Inventory         | Goods or products stored for sale             |
+| Demand Prediction | Estimating future stock needs using past data |
+| Stock-in          | Adding items to inventory                     |
+| Stock-out         | Removing items from inventory                 |
+| Admin             | User with full system control                 |
+| Dashboard         | Visual display of stock insights              |
+| Alert             | Notification for low stock levels             |
+| Historical Data   | Past inventory records used for analysis      |
+| User              | Person who operates the system                |
