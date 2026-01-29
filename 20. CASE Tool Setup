@@ -1,0 +1,80 @@
+
+
+To install and configure a CASE tool (StarUML / Visual Paradigm) for designing and modeling a Predictive Stock Management System.
+
+Software Requirements
+
+CASE Tool: StarUML / Visual Paradigm (Community Edition)
+
+Operating System: Windows / macOS / Linux
+
+System Type: UML Modeling Tool
+
+Tool Selected
+
+StarUML / Visual Paradigm
+
+Procedure
+Step 1: Installation
+
+Download StarUML or Visual Paradigm from the official website.
+
+Run the installer and follow the on-screen instructions.
+
+Launch the application after successful installation.
+
+Step 2: Project Creation
+
+Open the CASE tool.
+
+Select File → New Project.
+
+Choose UML Modeling.
+
+Name the project as Predictive Stock Management System.
+
+Step 3: Diagram Configuration
+
+The following UML diagrams were created to model the system:
+
+Use Case Diagram
+
+Actors: Admin, Store Manager
+
+Use Cases: Predict Stock Demand, Manage Inventory, Generate Reports
+
+Class Diagram
+
+Classes: Product, Inventory, SalesData, PredictionModel, User
+
+Sequence Diagram
+
+Interaction between Sales Data, Prediction Model, and Inventory Module
+
+Activity Diagram
+
+Workflow of stock monitoring and replenishment
+
+Step 4: System Modules Defined
+
+Stock Prediction Module
+
+Inventory Management Module
+
+Sales Analysis Module
+
+Reporting Module
+
+Step 5: Saving and Exporting
+
+Save the project file in the tool’s default format.
+
+Export diagrams in PDF/PNG format for documentation and submission.
+
+Result
+
+The CASE tool was successfully installed and configured. UML diagrams for the Predictive Stock Management System were created and saved, enabling effective system modeling and documentation.
+
+Conclusion
+
+Using a CASE tool simplifies system design by providing structured UML diagrams. The Predictive Stock Management System was effectively modeled using standard UML techniques.
