@@ -1,0 +1,29 @@
+Use case diagrams help visualize how users interact with the system. They show different actions users can perform and how the system responds. For the Predictive Stock Management System, use case diagrams were created to clearly understand user interactions.
+
+Main Actors
+
+Admin
+
+Store Manager / User
+
+System
+
+Core Use Cases
+
+Login to system
+
+Add stock details
+
+Update stock quantity
+
+View inventory levels
+
+Generate demand prediction
+
+Receive low-stock alerts
+
+View dashboard reports
+
+Manage users (Admin)
+
+These diagrams help simplify complex requirements into visual form. They also make it easier for stakeholders and developers to understand system behavior. Use case diagrams are included in the appendix of the SRS document.
