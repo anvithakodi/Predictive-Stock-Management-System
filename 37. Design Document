@@ -1,0 +1,141 @@
+ 
+1. Introduction
+
+This design document describes the architectural, structural, and behavioral design decisions made while developing the Predictive Stock Management System. The system is designed using object-oriented principles and modeled using UML diagrams with a CASE tool.
+
+2. Design Objectives
+
+The main objectives of the system design are:
+
+To ensure scalability for future growth
+
+To maintain modularity and ease of maintenance
+
+To support accurate stock demand prediction
+
+To enable efficient inventory management
+
+To allow collaboration and reuse through UML-based modeling
+
+3. Architectural Design Decisions
+3.1 Layered Architecture
+
+The system follows a layered architecture:
+
+Presentation Layer – User Interface
+
+Business Logic Layer – Inventory, Sales, Prediction, Supplier modules
+
+Data Layer – Centralized database
+
+Reason:
+Layered architecture improves separation of concerns, security, and maintainability.
+
+3.2 Component-Based Design
+
+The system is divided into independent components such as:
+
+Inventory Management
+
+Sales Management
+
+Prediction Engine
+
+Supplier Management
+
+Reporting
+
+Reason:
+Component-based design allows independent development, testing, and future replacement of modules.
+
+4. UML Design Decisions
+4.1 Use Case Design
+
+Use cases were designed to represent core system functionalities.
+
+Include relationships were used for mandatory actions like authentication.
+
+Extend relationships were used for optional actions like alerts and exports.
+
+Reason:
+This reduces redundancy and improves clarity of system behavior.
+
+4.2 Class Design
+
+A User superclass was created to avoid duplication of common attributes.
+
+Specialized classes (Admin, StoreManager, InventoryStaff) inherit from User.
+
+Classes were designed with single responsibility in mind.
+
+Reason:
+Inheritance improves code reuse and simplifies maintenance.
+
+4.3 Relationship Design
+
+Inheritance used for user roles
+
+Aggregation used where objects exist independently (Inventory–Product)
+
+Association used for functional interactions (PredictionModel–SalesData)
+
+Reason:
+These relationships accurately represent real-world dependencies.
+
+5. Behavioral Design Decisions
+5.1 Sequence Diagrams
+
+Sequence diagrams were created for critical system operations.
+
+Alternative flows were included to handle errors and exceptions.
+
+Reason:
+This ensures robust handling of real-world scenarios.
+
+5.2 Activity and Workflow Design
+
+Activity diagrams include decision points and parallel activities.
+
+Fork–join mechanisms were used for concurrent processes like analysis and notification.
+
+Reason:
+This improves system efficiency and models realistic workflows.
+
+6. Data Design Decisions
+
+Centralized database design was chosen to maintain data consistency.
+
+Separate entities for sales, inventory, predictions, and orders were maintained.
+
+Reason:
+This improves data integrity and simplifies reporting and analysis.
+
+7. Prediction Engine Design
+
+Prediction engine is designed as a separate component.
+
+Uses historical sales data and trends for forecasting.
+
+Reason:
+Isolation allows future enhancement or replacement of prediction algorithms without affecting other modules.
+
+8. Security Design Decisions
+
+User authentication is mandatory before accessing system features.
+
+Role-based access control is implemented.
+
+Reason:
+Ensures data security and controlled access to sensitive operations.
+
+9. Design Constraints
+
+CASE tool limitations
+
+Availability of historical sales data
+
+System performance constraints
+
+10. Conclusion
+
+The design of the Predictive Stock Management System emphasizes modularity, scalability, and clarity. UML-based modeling using a CASE tool enabled systematic representation of system structure and behavior. The design decisions ensure the system is maintainable, extensible, and suitable for real-world inventory management.
