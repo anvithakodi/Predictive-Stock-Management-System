@@ -1,0 +1,43 @@
+
+Aim
+
+To identify and define include and extend relationships among the use cases of the Predictive Stock Management System.
+
+Definition
+Include Relationship
+
+An include relationship is used when a use case always requires another use case to be executed.
+
+Extend Relationship
+
+An extend relationship is used when a use case optionally adds functionality to another use case based on certain conditions.
+
+Identified Use Case Relationships
+Include Relationships
+Base Use Case	Included Use Case	Description
+Login to System	Authenticate User	User authentication is mandatory for login
+Manage User Accounts	Login to System	Admin must be logged in to manage users
+Update Inventory Levels	Record Sales Data	Inventory updates require sales data
+Predict Stock Demand	Analyze Sales Data	Sales analysis is required for prediction
+Place Restock Order	View Stock Levels	Stock levels must be viewed before ordering
+Generate Reports	Collect System Data	Data collection is required for reports
+Extend Relationships
+Base Use Case	Extending Use Case	Condition
+View Stock Levels	Generate Restock Alerts	Stock below threshold
+Predict Stock Demand	Place Restock Order	Predicted demand exceeds stock
+Login to System	Reset Password	Invalid login or forgotten password
+Generate Reports	Export Reports	User requests export
+Update Inventory Levels	Notify Manager	Critical stock shortage
+Relationship Summary
+
+Include relationships ensure reuse of mandatory functionality such as authentication and data analysis.
+
+Extend relationships handle optional or conditional behaviors such as alerts, exports, and notifications.
+
+Result
+
+Include and extend relationships among the system use cases were successfully identified and defined.
+
+Conclusion
+
+Use case relationships improve clarity, reduce redundancy, and enhance modularity. The Predictive Stock Management System effectively uses include and extend relationships to model mandatory and optional behaviors.
