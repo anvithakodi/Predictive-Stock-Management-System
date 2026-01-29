@@ -1,0 +1,25 @@
+This section defines the features and functionalities that are included in the Predictive Stock Management System. These features are essential to achieve the project objectives and meet stakeholder needs.
+
+In-Scope Features
+
+User authentication and secure login
+
+Role-based access for admin and users
+
+Stock-in and stock-out management
+
+Real-time inventory tracking
+
+Historical data storage
+
+Demand prediction based on past data
+
+Identification of fast-moving and slow-moving items
+
+Low-stock alerts and notifications
+
+Dashboard for stock insights and trends
+
+Basic reporting and data visualization
+
+These features focus on improving inventory planning and reducing manual effort. The system aims to support proactive decision-making rather than just record keeping.
