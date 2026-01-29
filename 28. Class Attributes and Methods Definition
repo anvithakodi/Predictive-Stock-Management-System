@@ -1,0 +1,215 @@
+
+Aim
+
+To define the attributes (data members) and methods (member functions) for each identified class in the Predictive Stock Management System.
+
+Class Definitions
+1. User
+
+Attributes:
+
+userId : int
+
+username : String
+
+password : String
+
+role : String
+
+Methods:
+
+login()
+
+logout()
+
+changePassword()
+
+2. Admin (inherits User)
+
+Attributes:
+
+adminId : int
+
+Methods:
+
+addUser()
+
+updateUser()
+
+deleteUser()
+
+manageSuppliers()
+
+generateAdminReport()
+
+3. StoreManager (inherits User)
+
+Attributes:
+
+managerId : int
+
+Methods:
+
+viewStockLevels()
+
+viewPredictions()
+
+placeRestockOrder()
+
+4. InventoryStaff (inherits User)
+
+Attributes:
+
+staffId : int
+
+Methods:
+
+recordSalesData()
+
+updateInventory()
+
+5. Product
+
+Attributes:
+
+productId : int
+
+productName : String
+
+category : String
+
+unitPrice : double
+
+Methods:
+
+addProduct()
+
+updateProductDetails()
+
+removeProduct()
+
+6. Inventory
+
+Attributes:
+
+inventoryId : int
+
+quantityAvailable : int
+
+reorderLevel : int
+
+Methods:
+
+updateStock()
+
+checkStockLevel()
+
+generateReorderAlert()
+
+7. SalesData
+
+Attributes:
+
+salesId : int
+
+saleDate : Date
+
+quantitySold : int
+
+Methods:
+
+addSalesRecord()
+
+getSalesHistory()
+
+8. PredictionModel
+
+Attributes:
+
+modelId : int
+
+modelType : String
+
+accuracy : double
+
+Methods:
+
+analyzeSalesData()
+
+predictDemand()
+
+updateModel()
+
+9. Supplier
+
+Attributes:
+
+supplierId : int
+
+supplierName : String
+
+contactDetails : String
+
+Methods:
+
+addSupplier()
+
+updateSupplierDetails()
+
+supplyProduct()
+
+10. RestockOrder
+
+Attributes:
+
+orderId : int
+
+orderDate : Date
+
+orderQuantity : int
+
+orderStatus : String
+
+Methods:
+
+createOrder()
+
+updateOrderStatus()
+
+cancelOrder()
+
+11. Report
+
+Attributes:
+
+reportId : int
+
+reportType : String
+
+generatedDate : Date
+
+Methods:
+
+generateReport()
+
+exportReport()
+
+viewReport()
+
+Class Inheritance Overview
+
+User
+
+Admin
+
+StoreManager
+
+InventoryStaff
+
+Result
+
+Attributes and methods for all identified classes were clearly defined for the Predictive Stock Management System.
+
+Conclusion
+
+Defining attributes and methods helps in designing a precise and modular class diagram. The Predictive Stock Management System follows object-oriented principles with clear class responsibilities.
