@@ -1,0 +1,146 @@
+Aim
+
+To include and document alternative flows in the sequence diagrams of the Predictive Stock Management System to represent exceptional and conditional interactions.
+
+Definition
+
+An alternative flow represents a deviation from the main sequence of interactions due to errors, exceptions, or conditional situations.
+
+Alternative Flows in Sequence Diagrams
+1. Sequence Diagram: Login to System
+Main Flow
+
+User enters valid credentials → System authenticates → Access granted.
+
+Alternative Flow 1: Invalid Credentials
+
+Condition: Username or password is incorrect
+
+Object Interaction:
+
+AuthenticationService detects invalid credentials
+
+AuthenticationService sends authenticationFailed() to LoginUI
+
+LoginUI displays error message to User
+
+Outcome:
+User login is denied.
+
+Alternative Flow 2: Forgot Password
+
+Condition: User selects “Forgot Password”
+
+Object Interaction:
+
+User sends requestPasswordReset()
+
+System validates user identity
+
+System sends password reset link
+
+Outcome:
+Password reset process is initiated.
+
+2. Sequence Diagram: Record Sales and Update Inventory
+Main Flow
+
+Sales data recorded → Inventory updated successfully.
+
+Alternative Flow: Invalid Sales Data
+
+Condition: Product ID or quantity is invalid
+
+Object Interaction:
+
+SalesModule detects invalid data
+
+SalesModule sends dataValidationError()
+
+User is prompted to correct input
+
+Outcome:
+Sales data is not saved.
+
+3. Sequence Diagram: Predict Stock Demand
+Main Flow
+
+Sales data analyzed → Demand prediction generated.
+
+Alternative Flow 1: Insufficient Sales Data
+
+Condition: Not enough historical data
+
+Object Interaction:
+
+PredictionModel detects insufficient data
+
+System sends predictionUnavailable()
+
+Warning message displayed to Store Manager
+
+Outcome:
+Prediction process is stopped.
+
+Alternative Flow 2: Prediction Engine Failure
+
+Condition: Prediction service unavailable
+
+Object Interaction:
+
+PredictionModule fails to connect to PredictionModel
+
+System logs error
+
+User is notified to retry later
+
+Outcome:
+Prediction request is postponed.
+
+4. Sequence Diagram: Place Restock Order
+Main Flow
+
+Restock order created → Supplier notified.
+
+Alternative Flow 1: Supplier Unavailable
+
+Condition: Selected supplier is inactive
+
+Object Interaction:
+
+System detects supplier unavailability
+
+System requests alternate supplier selection
+
+Outcome:
+Order is not placed until a valid supplier is chosen.
+
+Alternative Flow 2: Order Cancellation
+
+Condition: Manager cancels order before confirmation
+
+Object Interaction:
+
+StoreManager sends cancelOrder()
+
+System terminates order process
+
+Outcome:
+No restock order is created.
+
+Alternative Flow Summary Table
+Sequence Diagram	Alternative Scenario	Outcome
+Login	Invalid credentials	Access denied
+Login	Forgot password	Reset initiated
+Sales Update	Invalid sales data	Data rejected
+Prediction	Insufficient data	Prediction stopped
+Prediction	System failure	Retry later
+Restock Order	Supplier unavailable	Select another supplier
+Restock Order	Order cancelled	Process terminated
+Result
+
+Alternative flows were successfully included in the sequence diagrams, covering error handling and conditional scenarios.
+
+Conclusion
+
+Including alternative flows improves system robustness and realism. The Predictive Stock Management System’s sequence diagrams now accurately represent both normal and exceptional object interactions.
