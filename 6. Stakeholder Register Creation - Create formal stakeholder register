@@ -1,0 +1,11 @@
+A stakeholder register lists all stakeholders with their involvement level and communication method.
+| Stakeholder        | Role               | Interest | Influence | Engagement           |
+| ------------------ | ------------------ | -------- | --------- | -------------------- |
+| Business Owners    | Primary users      | High     | High      | Feedback meetings    |
+| Store Managers     | Daily users        | High     | High      | Demo reviews         |
+| Warehouse Managers | Inventory handlers | Medium   | Medium    | Workflow discussions |
+| System Admin       | Manages access     | High     | High      | Security meetings    |
+| Customers          | End beneficiaries  | Medium   | Low       | Indirect feedback    |
+| Suppliers          | Stock providers    | Medium   | Low       | Forecast sharing     |
+| Project Team       | Developers         | High     | Medium    | Regular meetings     |
+| Course Instructor  | Evaluator          | Medium   | High      | Reviews              |
